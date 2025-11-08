@@ -3,7 +3,7 @@ function CampoBúsqueda({ onChange }) {
     <div>
       <label htmlFor="buscar">Filtrar por nombre o teléfono: </label>
       <input
-        type="text"
+        type="search"
         id="buscar"
         name="buscar"
         placeholder={"Escribe aquí..."}
