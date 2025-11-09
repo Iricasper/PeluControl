@@ -23,11 +23,11 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  /* min-width: 320px;
+  min-height: 100vh; */
+  margin: 15vh 25%;
+  text-align: center;
 }
 
 h1 {
@@ -52,6 +52,37 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+li {
+  list-style: none;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  list-style: none; /* remove list bullets */
+  padding: 0px;
+}
+
+.paginacion li a {
+  display: block; /* let links fill the list item */
+  padding: 8px 12px;
+  text-decoration: none;
+  margin: 0 4px;
+  border-radius: 5px; /* add rounded borders */
+}
+
+.paginacion ul > li {
+    display: inline-block;
+}
+
+ li.selected a {
+  color: white;
+}
+
+.hidden {
+  visibility: hidden
 }
 
 @media (prefers-color-scheme: light) {
